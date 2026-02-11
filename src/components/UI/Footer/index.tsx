@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import nexab_footer_logo from '../../../../public/images/logo/company-logo.PNG';
+import nexab_footer_logo from '../../../../public/images/logo/company-logo.png';
 import qr_code from '../../../../public/svgs/qr_code.svg';
 import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
 import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';

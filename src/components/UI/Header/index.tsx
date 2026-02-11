@@ -10,7 +10,7 @@ import {
   AbsoluteLinks,
   BurgerMenu,
 } from './styles';
-import nexab_logo from '../../../../public/images/logo/company-logo.PNG';
+import nexab_logo from '../../../../public/images/logo/company-logo.png';
 import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/Common/AnimatedLink';
