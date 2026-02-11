@@ -15,8 +15,8 @@ import RevealCover from '@/components/Common/RevealCover';
 import { Div } from '../Featured/styles';
 import { imageVariants } from '../Featured';
 import { useIsMobile } from '../../../../libs/useIsMobile';
-import financial_freedom_banner from '../../../../public/images/financial_freedom_banner.png';
-import freedom_mobile_banner from '../../../../public/images/freedom_mobile_banner.png';
+import modern_apartment_banner from '../../../../public/images/landing-page/modern-apartment.png';
+import freedom_mobile_banner from '../../../../public/images/landing-page/rain-falls-on-clean-pool-and-deck.jpg';
 import {
   desktopBriefNotePhrase,
   desktopHeaderPhrase,
@@ -55,9 +55,9 @@ const FinancialFreedom = () => {
             viewport={{ amount: 0.25, once: true }}
           >
             {isMobile ? (
-              <Image src={freedom_mobile_banner} alt="banner_img" fill />
+              <Image src={freedom_mobile_banner} alt="Modern poolside deck from Nexab property" fill style={{ objectFit: 'cover' }} />
             ) : (
-              <Image src={financial_freedom_banner} alt="banner_img" fill />
+              <Image src={modern_apartment_banner} alt="Luxurious modern apartment interior by Nexab" fill style={{ objectFit: 'cover' }} />
             )}
           </Div>
         </BannerCtn>

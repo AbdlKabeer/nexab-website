@@ -1,36 +1,35 @@
 import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
 import ic_wallet_minus from '../../../../public/svgs/ic_wallet_minus.svg';
+import ic_banknotes from '../../../../public/svgs/ic_banknotes.svg';
+import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
+
 export const cardsInfo = [
   {
-    title: 'Spend Better',
+    title: 'High ROI Properties',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
-    icon: ic_money_send,
+      'We identify properties with high potential for capital appreciation and rental yield.',
+    icon: ic_banknotes,
   },
   {
-    title: 'Invest Better',
+    title: 'Verified Ownership',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
-    icon: ic_wallet_minus,
+      'Every property on Nexab undergoes a rigorous verification process to ensure clean titles.',
+    icon: ic_circle_stack,
   },
 ];
 
 export const stats = [
   {
-    number: '50+',
-    subtitle: 'cities',
+    number: '15%+',
+    subtitle: 'Avg. Annual Appreciation',
   },
   {
-    number: '50,000+',
-    subtitle: 'transactions',
+    number: '500+',
+    subtitle: 'Verified Properties',
   },
   {
-    number: '3M+',
-    subtitle: 'users',
-  },
-  {
-    number: '5+',
-    subtitle: 'user ratings',
+    number: '1.2k+',
+    subtitle: 'Happy Homeowners',
   },
 ];
 

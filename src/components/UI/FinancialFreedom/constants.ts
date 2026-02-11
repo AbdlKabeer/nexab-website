@@ -4,31 +4,31 @@ import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
 import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ['Your Financial Freedom,', 'Your Way'];
+export const desktopHeaderPhrase = ['Your Dream Living,', 'Your Way'];
 export const desktopParagraphPhrase = [
-  'We believe that managing your finances should be effortless and cost-effective.',
-  "That's why we offer you the freedom you deserve.",
+  'We believe that finding your perfect home should be effortless and transparent.',
+  "That's why Nexab offers you the premium experience you deserve.",
 ];
 export const desktopBriefNotePhrase = [
-  'Smart investments,',
-  'secure payments, and',
+  'Prime locations,',
+  'modern amenities, and',
   'expert guidance, all in',
   'one place.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Financial', 'Freedom, Your Way'];
+export const mobileHeaderPhrase = ['Your Dream', 'Living, Your Way'];
 export const mobileParagraphPhrase = [
-  'We believe that managing your finances should be',
-  "effortless and cost-effective. That's why we offer",
-  ' you the freedom you deserve.',
+  'We believe that finding your perfect home should be',
+  "effortless and transparent. That's why Nexab offers",
+  ' you the premium experience you deserve.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Smart',
-  ' investments,',
-  'secure',
-  ' payments,',
+  'Prime',
+  ' locations,',
+  'modern',
+  ' amenities,',
   'and expert',
   'guidance, all',
   'in one place.',
@@ -36,21 +36,21 @@ export const mobileBriefNotePhrase = [
 
 export const edges = [
   {
-    point: 'No minimum balance fees',
+    point: 'Premium Locations',
     details:
-      'Say goodbye to minimum balance fees. Your account, your balance—no hidden charges',
+      'Find properties in the most sought-after neighborhoods, curated for quality and accessibility.',
     icon: ic_banknotes,
   },
   {
-    point: 'No monthly fees',
+    point: 'Modern Amenities',
     details:
-      'Bank with us without worrying about monthly fees. Keep more of your money where it belongs—in your account',
+      'State-of-the-art facilities including smart home tech, pools, and gyms for a comfortable lifestyle.',
     icon: ic_circle_stack,
   },
   {
-    point: 'No bank transfer fees',
+    point: 'Zero Commission',
     details:
-      'Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees.',
+      'Direct deals with transparent pricing. No hidden fees or middleman commissions on select properties.',
     icon: ic_arrows_left_right,
   },
 ];

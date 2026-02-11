@@ -3,39 +3,39 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing RAFT's Next-", 'Gen Cards'];
+export const desktopHeaderPhrase = ["Introducing Nexab's Smart", 'Property App'];
 export const desktopParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards. Elevate your banking",
-  'experience with cutting-edge features, security, and unprecedented',
+  " Discover Nexab's latest innovation – our property management app. Elevate your",
+  'real estate experience with cutting-edge features, virtual tours, and unprecedented',
   'convenience.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing RAFT's", 'Next-Gen Cards'];
+export const mobileHeaderPhrase = ["Introducing Nexab's", 'Property App'];
 export const mobileParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards.",
-  ' Elevate your banking experience with cutting-edge',
-  'features, security, and unprecedented',
+  " Discover Nexab's latest innovation – our property app.",
+  ' Elevate your real estate experience with cutting-edge',
+  'features, virtual tours, and unprecedented',
   'convenience.',
 ];
 
 export const edges = [
   {
-    point: 'Contactless Technology',
+    point: 'Virtual Tours',
     details:
-      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
+      'Our app comes equipped with immersive virtual tour technology, allowing you to explore properties from the comfort of your home.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Personalization',
+    point: 'Smart Management',
     details:
-      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
+      'Manage your property listings, viewing schedules, and documents all in one secure place with a few simple taps.',
     icon: ic_identification,
   },
   {
-    point: 'Enhanced Security',
+    point: 'Advanced Search',
     details:
-      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
+      'Your perfect home is just a search away. Our advanced filters help you find properties that match your exact criteria.',
     icon: ic_lock_closed,
   },
 ];

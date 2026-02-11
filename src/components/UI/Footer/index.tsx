@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import raft_footer_logo from '../../../../public/svgs/raft_footer_logo.svg';
+import nexab_footer_logo from '../../../../public/images/logo/company-logo.PNG';
 import qr_code from '../../../../public/svgs/qr_code.svg';
 import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
 import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
@@ -16,7 +16,7 @@ const linksArr = [
     links: ['Terms of use', 'Privacy policy', 'About us'],
   },
   {
-    title: 'About us',
+    title: 'Support',
     links: ['Contact us', 'FAQ'],
   },
 ];
@@ -44,7 +44,7 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <Image src={nexab_footer_logo} alt="nexab_footer_logo" width={120} height={40} style={{ objectFit: 'contain' }} />
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
@@ -53,7 +53,7 @@ const Footer = () => {
                 <Image src={qr_code} alt="qr_code" />
               </QRImageCtn>
               <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
+                <p>Scan to download Nexab App on the Playstore and Appstore.</p>
                 <IconCtn>
                   <Image src={ic_google_playstore} alt="playstore icon" />
                   <Image src={ic_baseline_apple} alt="apple icon" />
@@ -80,7 +80,7 @@ const Footer = () => {
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              Nexab Corp, LLC.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

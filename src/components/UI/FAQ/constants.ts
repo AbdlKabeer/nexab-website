@@ -2,9 +2,10 @@ type FAQItem = {
   question: string;
   answer: string;
 };
+export const desktopHeaderPhrase = ['Frequently Asked', 'Questions'];
 
-export const desktopHeaderPhrase = ['Frequently asked', 'questions'];
-export const mobileHeaderPhrase = ['Frequently', 'asked', 'questions'];
+export const mobileHeaderPhrase = ['Frequently', 'Asked Questions'];
+
 export const animate = {
   initial: {
     y: '100%',
@@ -19,23 +20,28 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I create an account with RAFT?',
+    question: 'How do I schedule a property viewing?',
     answer:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'You can schedule a viewing directly through the property detail page by clicking the "Book a Tour" button, or by contacting our support team.',
   },
   {
-    question: 'How does RAFT ensure the security of my financial data?',
+    question: 'Are the properties on Nexab verified?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Yes, all properties listed on Nexab undergo a thorough verification process, including title checks and physical inspections.',
   },
   {
-    question: 'What types of transactions can I perform with RAFT?',
+    question: 'What are the payment options for purchasing?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'We support various payment methods including bank transfers, mortgage financing through our partners, and installment plans for select properties.',
   },
   {
-    question: 'What benefits does RAFT offer for wealth management?',
+    question: 'Is there a commission fee?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Nexab offers direct-to-owner listings with zero commission on many properties. For managed sales, we charge a transparent, flat fee.',
+  },
+  {
+    question: 'Can I list my own property on Nexab?',
+    answer:
+      'Absolutely! You can register as a seller and list your property after it passes our verification criteria.',
   },
 ];

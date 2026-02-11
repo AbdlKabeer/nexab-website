@@ -1,47 +1,48 @@
-import seamless_payments from '../../../../public/images/seamless_payments.png';
-import smart_investing from '../../../../public/images/smart_investing.png';
-import wealth_management from '../../../../public/images/wealth_management.png';
-import financial_planning from '../../../../public/images/financial_planning.png';
+import luxury_penthouse from '../../../../public/images/landing-page/luxury-penthouse.png';
+import modern_apartment from '../../../../public/images/landing-page/modern-apartment.png';
+import loftstyle_bedroom from '../../../../public/images/landing-page/loftstyle-bedroom-with-throw-pillows.jpg';
+import couples_hotel from '../../../../public/images/landing-page/couples-hotel-bath-robes-on-holiday.jpg';
+
 // For desktop
 export const desktopHeaderPhrases = [
-  'Elevate Your Financial',
-  'Journey with RAFT',
+  'Comprehensive Real Estate',
+  'Solutions with Nexab',
 ];
 export const desktopParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From investments to payments,',
-  "we've got you covered. Join us and unlock your potential today.",
+  'Nexab offers a world of property possibilities. From luxury sales to professional',
+  "management, we've got you covered. Find your next home with us today.",
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From',
-  "investments to payments, we've got you covered.",
-  'Join us and unlock your potential today.',
+  'Nexab offers a world of property possibilities. From',
+  "luxury sales to management, we've got you covered.",
+  'Find your next home with us today.',
 ];
 
 export const offers = [
   {
-    illustration: seamless_payments,
-    title: 'Seamless Payments',
+    illustration: luxury_penthouse,
+    title: 'Property Sales',
     details:
-      'Enjoy secure, seamless transactions that make managing your money a breeze.',
+      'Explore our curated selection of luxury homes and commercial properties for sale.',
   },
   {
-    illustration: smart_investing,
-    title: 'Smart Investing',
+    illustration: modern_apartment,
+    title: 'Rentals & Leasing',
     details:
-      'Grow your wealth confidently with our personalized investment solutions, tailored to your financial goals.',
+      'Discover high-end apartments and modern living spaces available for rent in prime locations.',
   },
   {
-    illustration: wealth_management,
-    title: 'Wealth Management',
+    illustration: loftstyle_bedroom,
+    title: 'Property Management',
     details:
-      'Make informed decisions for your financial future with our wealth management expertise.',
+      'Professional management services to ensure your property is well-maintained and profitable.',
   },
   {
-    illustration: financial_planning,
-    title: 'Financial Planning',
+    illustration: couples_hotel,
+    title: 'Investment Advice',
     details:
-      'Achieve your financial dreams with our comprehensive financial planning services, guiding you toward a secure future.',
+      'Expert guidance on real estate investment opportunities to grow your wealth steadily.',
   },
 ];

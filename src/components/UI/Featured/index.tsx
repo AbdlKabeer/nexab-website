@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import big_banner from '../../../../public/images/big_banner.png';
-import featured_mobile_banner from '../../../../public/images/featured_mobile_banner.png';
+import luxury_penthouse from '../../../../public/images/landing-page/luxury-penthouse.png';
+import modern_apartment from '../../../../public/images/landing-page/modern-apartment.png';
 import ParallaxText from '@/components/Common/ParallaxImages';
 import companies_image from '../../../../public/images/companies.png';
 import { Wrapper, Inner, ImageContainer, ParallaxImages, Div } from './styles';
@@ -36,16 +36,22 @@ const Featured = () => {
           >
             {isMobile ? (
               <Image
-                src={featured_mobile_banner}
-                alt="featured_mobile_banner"
+                src={modern_apartment}
+                alt="Modern Nexab apartment unit"
                 fill
+                style={{ objectFit: 'cover' }}
               />
             ) : (
-              <Image src={big_banner} alt="big_banner" fill />
+              <Image
+                src={luxury_penthouse}
+                alt="Luxury Nexab penthouse exterior view"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
             )}
           </Div>
         </ImageContainer>
-        <h2>Featured and Seen in</h2>
+        <h2>Featured Properties and Partners</h2>
         <ParallaxImages>
           <ParallaxText baseVelocity={-4}>
             <Image src={companies_image} alt="comapanies" />

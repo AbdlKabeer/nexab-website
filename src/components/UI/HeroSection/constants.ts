@@ -1,13 +1,13 @@
 // For desktop
-export const phrases = ['Building the future of', 'banking.'];
+export const phrases = ['Find your dream home', 'with Nexab.'];
 export const paragraphPhrases = [
-  "Experience the future of banking with RAFT. We're here to",
-  'empower your financial journey.',
+  'Discover the perfect property that fits your lifestyle.',
+  'We make house hunting easy and enjoyable.',
 ];
 
 // For mobile
-export const mobilePhrases = ['Building the future', 'of banking'];
+export const mobilePhrases = ['Find your dream', 'home with Nexab'];
 export const mobileParagraphPhrases = [
-  "Experience the future of banking with RAFT. We're",
-  'here to empower your financial journey.',
+  'Discover the perfect property that fits',
+  'your lifestyle. We make house hunting easy.',
 ];
