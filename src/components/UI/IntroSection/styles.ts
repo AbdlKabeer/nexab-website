@@ -81,14 +81,25 @@ export const CardsContainer = styled.div`
 `;
 
 export const LeftImage = styled(Image)`
-  transform: rotate(270deg);
   position: absolute;
-  top: 64px;
-  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  top: 40px;
+  left: 10%;
+  transform: rotate(-10deg) scale(0.9);
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  filter: blur(1px);
+  opacity: 0.8;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
   &.active {
-    transform: rotate(70.281deg) translate(-50%, 60%);
-    top: 60%;
+    transform: rotate(0deg) scale(1) translateX(-20%);
+    filter: blur(0);
+    opacity: 1;
+    z-index: 4;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -96,18 +107,39 @@ export const MiddleImage = styled(Image)`
   position: relative;
   z-index: 3;
   cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const RightImage = styled(Image)`
-  width: 21.875rem;
-  height: 13.875rem;
-  transform: rotate(90deg);
-  top: 65px;
   position: absolute;
-  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  top: 40px;
+  right: 10%;
+  transform: rotate(10deg) scale(0.9);
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  filter: blur(1px);
+  opacity: 0.8;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
   &.active {
-    transform: rotate(-70.281deg) translate(50%, 60%);
-    top: 60%;
+    transform: rotate(0deg) scale(1) translateX(20%);
+    filter: blur(0);
+    opacity: 1;
+    z-index: 4;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

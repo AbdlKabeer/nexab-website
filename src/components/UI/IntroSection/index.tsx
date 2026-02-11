@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Edge, Edges, Title } from '../FinancialFreedom/styles';
-import lola_card from '../../../../public/images/lola_card.png';
-import orange_card from '../../../../public/images/orange_card.png';
-import terry_card from '../../../../public/images/terry_card.png';
+import interior from '../../../../public/images/brand/interior.png';
+import exterior from '../../../../public/images/brand/exterior.png';
+import smart_home from '../../../../public/images/brand/smart_home.png';
 import {
   Wrapper,
   Inner,
@@ -51,19 +51,25 @@ const IntroSection = () => {
         <CardsContainer>
           <LeftImage
             className={isHovered ? 'active' : ''}
-            src={orange_card}
-            alt="orange_atm_card"
+            src={exterior}
+            alt="Modern Nexab property exterior"
+            width={400}
+            height={250}
           />
           <MiddleImage
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            src={lola_card}
-            alt="blue card"
+            src={interior}
+            alt="Luxury Nexab interior"
+            width={500}
+            height={320}
           />
           <RightImage
             className={isHovered ? 'active' : ''}
-            src={terry_card}
-            alt="terry card"
+            src={smart_home}
+            alt="Nexab smart home technology"
+            width={400}
+            height={250}
           />
         </CardsContainer>
         <Edges>
