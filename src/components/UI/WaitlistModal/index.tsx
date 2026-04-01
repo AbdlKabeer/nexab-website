@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import {
   Overlay,
@@ -14,6 +14,7 @@ import WaitlistForm from '../../Common/WaitlistForm';
 const WaitlistModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const hasShownRef = useRef(false);
 
   useEffect(() => {
     // 1. Scroll trigger logic
@@ -28,9 +29,9 @@ const WaitlistModal = () => {
       const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
 
       // Trigger at 30% scroll
-      if (scrollPercent > 30 && !localStorage.getItem('waitlist-modal-shown')) {
+      if (scrollPercent > 30 && !hasShownRef.current) {
         setIsOpen(true);
-        localStorage.setItem('waitlist-modal-shown', 'true');
+        hasShownRef.current = true;
       }
     };
 
@@ -116,8 +117,8 @@ const WaitlistModal = () => {
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-                <h3>You're In!</h3>
-                <p>We'll notify you as soon as we launch.</p>
+                <h3>You&apos;re In!</h3>
+                <p>We&apos;ll notify you as soon as we launch.</p>
                 <DoneButton onClick={closePortal}>
                   Done
                 </DoneButton>
