@@ -7,6 +7,7 @@ import {
   IntroSection,
   JoinSection,
   OffersSection,
+  WaitlistModal,
 } from '@/components';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <IntroSection />
       <JoinSection />
       <FAQ />
+      <WaitlistModal />
     </main>
   );
 }

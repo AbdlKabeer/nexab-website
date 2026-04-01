@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "@studio-freight/react-lenis": "^0.0.36",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
+    "mongodb": "^5.9.2",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
