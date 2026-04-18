@@ -21,15 +21,15 @@ const linksArr = [
     title: 'Legal',
     links: [
       { label: 'Terms of use', path: '/terms' },
-      { label: 'Privacy policy', path: '#' },
+      { label: 'Privacy policy', path: '/privacy' },
       { label: 'About us', path: '/about-us' },
     ],
   },
   {
     title: 'Support',
     links: [
-      { label: 'Contact us', path: '#' },
-      { label: 'FAQ', path: '#' },
+      { label: 'Contact us', path: '/contact' },
+      { label: 'FAQ', path: '/#faq' },
     ],
   },
 ];

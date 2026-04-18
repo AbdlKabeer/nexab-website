@@ -165,7 +165,7 @@ const AboutUsPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              We are constantly pushing the boundaries of what's possible in real estate technology. 
+              We are constantly pushing the boundaries of what&apos;s possible in real estate technology. 
               From smart asset management to integrated agent scheduling, our platform is built 
               to handle the complexities of modern property markets.
             </motion.p>
@@ -183,8 +183,8 @@ const AboutUsPage = () => {
           >
             <h2>Join the Nexab Ecosystem</h2>
             <p>
-              Whether you're looking for your next home, managing a portfolio, or 
-              ready to conduct inspections, there’s a place for you here.
+              Whether you&apos;re looking for your next home, managing a portfolio, or 
+              ready to conduct inspections, there&apos;s a place for you here.
             </p>
             <GetStartedButton padding="1.5rem 4rem" />
           </motion.div>

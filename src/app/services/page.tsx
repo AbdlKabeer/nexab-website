@@ -79,7 +79,7 @@ const ServicesPage = () => {
           >
             <h1>Our Services</h1>
             <p>
-              Nexab is more than a platform — it's an ecosystem designed to make
+              Nexab is more than a platform — it&apos;s an ecosystem designed to make
               real estate transactions seamless for everyone involved.
             </p>
           </motion.div>
@@ -108,7 +108,7 @@ const ServicesPage = () => {
         <CTASection>
           <h2>Ready to experience the future?</h2>
           <p>
-            Whether you're looking for a home, listing a property, or ready to
+            Whether you&apos;re looking for a home, listing a property, or ready to
             become an agent, Nexab has a place for you.
           </p>
           <GetStartedButton padding="1.25rem 3rem" />
