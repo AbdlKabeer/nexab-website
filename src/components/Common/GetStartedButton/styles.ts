@@ -7,7 +7,7 @@ export const LinkTo = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 6.25rem;
-  background: var(--green);
+  background: var(--brand-primary);
   color: var(--white);
   border: none;
   font-family: inherit;

@@ -21,21 +21,21 @@ export const mobileParagraphPhrase = [
 
 export const edges = [
   {
-    point: 'Virtual Tours',
+    point: 'For Renters',
     details:
-      'Our app comes equipped with immersive virtual tour technology, allowing you to explore properties from the comfort of your home.',
+      'Explore properties with immersive virtual tours and book instant inspections with local agents.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Smart Management',
+    point: 'For Agents',
     details:
-      'Manage your property listings, viewing schedules, and documents all in one secure place with a few simple taps.',
+      'Manage inspection schedules, conduct verified property tours, and earn rewards on our platform.',
     icon: ic_identification,
   },
   {
-    point: 'Advanced Search',
+    point: 'For Landlords',
     details:
-      'Your perfect home is just a search away. Our advanced filters help you find properties that match your exact criteria.',
+      'List properties with advanced filters to reach verified renters and manage your portfolio with ease.',
     icon: ic_lock_closed,
   },
 ];

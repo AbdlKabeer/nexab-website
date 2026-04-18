@@ -1,20 +1,18 @@
-import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
-import ic_wallet_minus from '../../../../public/svgs/ic_wallet_minus.svg';
-import ic_banknotes from '../../../../public/svgs/ic_banknotes.svg';
-import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
+import img_high_roi from '../../../../public/images/landing-page/luxury-penthouse.png';
+import img_verified from '../../../../public/images/landing-page/modern-apartment.png';
 
 export const cardsInfo = [
   {
     title: 'High ROI Properties',
     details:
       'We identify properties with high potential for capital appreciation and rental yield.',
-    icon: ic_banknotes,
+    icon: img_high_roi,
   },
   {
     title: 'Verified Ownership',
     details:
       'Every property on Nexab undergoes a rigorous verification process to ensure clean titles.',
-    icon: ic_circle_stack,
+    icon: img_verified,
   },
 ];
 
@@ -35,22 +33,21 @@ export const stats = [
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Confidently Shape Your',
-  'Financial Future',
+  'Confidently Scale Your',
+  'Real Estate Portfolio',
 ];
 export const desktopParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape your financial future. Our modern',
-  'approach simplifies saving and investing, making it easier than ever.',
+  'At Nexab, we empower renters, agents, and landlords to scale their real estate',
+  'growth. Our ecosystem simplifies everything from listing to closing.',
 ];
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Confidently Shape',
-  ' Your Financial Future',
+  'Confidently Scale',
+  ' Your Real Estate',
 ];
 export const mobileParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape',
-  'your financial future. Our modern approach',
-  'simplifies saving and investing, making it easier',
-  'than ever.',
+  'At Nexab, we empower everyone to grow',
+  'their real estate potential. Our ecosystem',
+  'simplifies everything for you.',
 ];

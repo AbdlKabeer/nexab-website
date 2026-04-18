@@ -32,9 +32,9 @@ export const Input = styled.input`
   }
 
   &:focus {
-    border-color: var(--emerald);
+    border-color: var(--brand-secondary);
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 15px rgba(72, 214, 76, 0.2);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
   }
 
   &:disabled {
@@ -48,7 +48,7 @@ export const SubmitButton = styled(motion.button)`
   padding: 1.25rem;
   border-radius: 6.25rem;
   border: none;
-  background: var(--green);
+  background: var(--brand-primary);
   color: var(--white);
   font-size: 1.125rem;
   font-weight: 600;
@@ -56,9 +56,9 @@ export const SubmitButton = styled(motion.button)`
   transition: all 0.3s ease;
 
   &:hover:not(:disabled) {
-    background: var(--emerald);
+    background: var(--brand-secondary);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(72, 214, 76, 0.3);
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
   }
 
   &:active {
@@ -74,6 +74,6 @@ export const SubmitButton = styled(motion.button)`
 export const Message = styled(motion.p)<{ $isError?: boolean }>`
   font-size: 0.875rem;
   text-align: center;
-  color: ${props => (props.$isError ? '#ff4d4d' : 'var(--emerald)')};
+  color: ${props => (props.$isError ? '#ff4d4d' : 'var(--brand-secondary)')};
   margin-top: 0.5rem;
 `;

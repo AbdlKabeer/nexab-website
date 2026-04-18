@@ -6,18 +6,31 @@ import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
 import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
+import Link from 'next/link';
+
 const linksArr = [
   {
     title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    links: [
+      { label: 'Our Company', path: '/about-us' },
+      { label: 'Careers', path: '#' },
+      { label: 'Press kits', path: '#' },
+    ],
   },
   {
     title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
+    links: [
+      { label: 'Terms of use', path: '/terms' },
+      { label: 'Privacy policy', path: '#' },
+      { label: 'About us', path: '/about-us' },
+    ],
   },
   {
     title: 'Support',
-    links: ['Contact us', 'FAQ'],
+    links: [
+      { label: 'Contact us', path: '#' },
+      { label: 'FAQ', path: '#' },
+    ],
   },
 ];
 
@@ -66,7 +79,9 @@ const Footer = () => {
                   <h3>{l.title}</h3>
                   <LinksContainer>
                     {l.links.map((link, i) => (
-                      <li key={i}>{link}</li>
+                      <li key={i}>
+                        <Link href={link.path}>{link.label}</Link>
+                      </li>
                     ))}
                   </LinksContainer>
                 </GridColumn>

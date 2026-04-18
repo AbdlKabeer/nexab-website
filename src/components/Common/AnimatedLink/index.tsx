@@ -57,13 +57,33 @@ const letterAnimationTwo = {
   },
 };
 
-const AnimatedLink = ({ title, onClick }: { title: string; onClick?: () => void }) => {
+import { useRouter } from 'next/navigation';
+
+const AnimatedLink = ({ 
+  title, 
+  onClick, 
+  href 
+}: { 
+  title: string; 
+  onClick?: () => void;
+  href?: string;
+}) => {
   const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (onClick) {
+      onClick();
+    } else if (href) {
+      router.push(href);
+    }
+  };
+
   return (
     <Div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={onClick}
+      onClick={handleClick}
       style={{ cursor: 'pointer' }}
     >
       <AnimatedWord

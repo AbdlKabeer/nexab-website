@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
     }
 
     const client = await clientPromise;
-    const db = client.db('raft_landing_page');
+    const db = client.db('nexab_landing_page');
     const collection = db.collection('waitlist');
 
     // Check if email already exists

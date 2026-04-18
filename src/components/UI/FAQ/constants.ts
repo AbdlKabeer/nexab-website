@@ -20,28 +20,28 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I schedule a property viewing?',
+    question: 'How do I schedule an inspection as a Renter?',
     answer:
-      'You can schedule a viewing directly through the property detail page by clicking the "Book a Tour" button, or by contacting our support team.',
+      'You can schedule an inspection directly through the property detail page. Just click "Book Inspection", choose a convenient time, and a verified Nexab agent will meet you at the property.',
   },
   {
-    question: 'Are the properties on Nexab verified?',
+    question: 'How do I earn money as a Nexab Agent?',
     answer:
-      'Yes, all properties listed on Nexab undergo a thorough verification process, including title checks and physical inspections.',
+      'After registration and verification, you can accept inspection requests in your area. You earn a fee for every professional property tour you conduct through the platform.',
   },
   {
-    question: 'What are the payment options for purchasing?',
+    question: 'Are the landlords and agents on Nexab verified?',
     answer:
-      'We support various payment methods including bank transfers, mortgage financing through our partners, and installment plans for select properties.',
+      'Absolutely. Every landlord and agent on our platform undergoes a rigorous identity and document verification process to ensure a safe and trusted ecosystem.',
   },
   {
-    question: 'Is there a commission fee?',
+    question: 'What are the fees for Landlords to list properties?',
     answer:
-      'Nexab offers direct-to-owner listings with zero commission on many properties. For managed sales, we charge a transparent, flat fee.',
+      'Landlords can list their first property for free! For multiple listings or premium placements, we offer transparent, tiered pricing plans with no hidden costs.',
   },
   {
-    question: 'Can I list my own property on Nexab?',
+    question: 'Does Nexab handle property sales as well?',
     answer:
-      'Absolutely! You can register as a seller and list your property after it passes our verification criteria.',
+      'Yes, Nexab supports both rentals and sales. Landlords can list properties for sale, and our network of agents can facilitate the viewing and closing process.',
   },
 ];

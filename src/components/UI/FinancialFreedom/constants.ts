@@ -4,53 +4,53 @@ import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
 import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ['Your Dream Living,', 'Your Way'];
+export const desktopHeaderPhrase = ['Effortless Real Estate,', 'For Everyone'];
 export const desktopParagraphPhrase = [
-  'We believe that finding your perfect home should be effortless and transparent.',
-  "That's why Nexab offers you the premium experience you deserve.",
+  'We believe that managing real estate should be effortless for renters, landlords, and agents.',
+  "Nexab provides the tools and transparency you need to succeed.",
 ];
 export const desktopBriefNotePhrase = [
-  'Prime locations,',
-  'modern amenities, and',
-  'expert guidance, all in',
-  'one place.',
+  'Simplified listings,',
+  'verified inspections, and',
+  'secure connections, all in',
+  'one platform.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Dream', 'Living, Your Way'];
+export const mobileHeaderPhrase = ['Effortless', 'Real Estate'];
 export const mobileParagraphPhrase = [
-  'We believe that finding your perfect home should be',
-  "effortless and transparent. That's why Nexab offers",
-  ' you the premium experience you deserve.',
+  'We believe that managing real estate should be',
+  'effortless for everyone. Nexab provides the',
+  'tools and transparency you need.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Prime',
-  ' locations,',
-  'modern',
-  ' amenities,',
-  'and expert',
-  'guidance, all',
+  'Simplified',
+  ' listings,',
+  'verified',
+  ' inspections,',
+  'and secure',
+  'connections, all',
   'in one place.',
 ];
 
 export const edges = [
   {
-    point: 'Premium Locations',
+    point: 'Direct Connections',
     details:
-      'Find properties in the most sought-after neighborhoods, curated for quality and accessibility.',
+      'Connect directly with verified landlords and agents. No middlemen, no hidden surprises.',
     icon: ic_banknotes,
   },
   {
-    point: 'Modern Amenities',
+    point: 'Seamless Inspections',
     details:
-      'State-of-the-art facilities including smart home tech, pools, and gyms for a comfortable lifestyle.',
+      'Book professional inspections at the tap of a button, conducted by our registered network of experts.',
     icon: ic_circle_stack,
   },
   {
-    point: 'Zero Commission',
+    point: 'Trusted Transactions',
     details:
-      'Direct deals with transparent pricing. No hidden fees or middleman commissions on select properties.',
+      'Our rigorous verification process ensures every listing and user is authentic and reliable.',
     icon: ic_arrows_left_right,
   },
 ];

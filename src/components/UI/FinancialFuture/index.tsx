@@ -52,7 +52,7 @@ const FinancialFuture = () => {
                 <MaskText phrases={new Array(info.details)} tag="p" />
               </TextCtn>
               <SVGCtn>
-                <Image src={info.icon} alt="icon" />
+                <Image src={info.icon} alt="property image" fill style={{ objectFit: 'cover' }} />
               </SVGCtn>
             </Card>
           ))}

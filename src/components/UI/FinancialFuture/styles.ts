@@ -102,10 +102,11 @@ export const TextCtn = styled.div`
 `;
 
 export const SVGCtn = styled.div`
-  background: url(${card_grid.src});
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 0.75rem 0.75rem;
   height: 24.55rem;
-  display: grid;
-  place-items: center;
+  width: 100%;
 
   @media (max-width: 768px) {
     height: 15.28219rem;

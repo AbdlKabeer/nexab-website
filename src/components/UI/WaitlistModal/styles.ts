@@ -37,7 +37,7 @@ export const ModalContainer = styled(motion.div)`
     height: 200%;
     background: radial-gradient(
       circle at center,
-      rgba(72, 214, 76, 0.05) 0%,
+      rgba(249, 115, 22, 0.05) 0%,
       transparent 70%
     );
     pointer-events: none;
@@ -115,7 +115,7 @@ export const SuccessOverlay = styled(motion.div)`
   svg {
     width: 4rem;
     height: 4rem;
-    color: var(--emerald);
+    color: var(--brand-secondary);
     margin-bottom: 1.5rem;
   }
 
@@ -134,7 +134,7 @@ export const DoneButton = styled.button`
   padding: 0.875rem 3rem;
   border-radius: 6.25rem;
   border: none;
-  background: var(--green);
+  background: var(--brand-primary);
   color: var(--white);
   font-size: 1rem;
   font-weight: 600;
@@ -143,8 +143,8 @@ export const DoneButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: var(--emerald);
-    box-shadow: 0 5px 15px rgba(72, 214, 76, 0.3);
+    background: var(--brand-secondary);
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
     transform: translateY(-2px);
   }
 

@@ -10,7 +10,7 @@ import {
   AbsoluteLinks,
   BurgerMenu,
 } from './styles';
-import nexab_logo from '../../../../public/images/logo/company-logo.png';
+import nexab_logo from '../../../../public/images/logo/logo-png-1.png';
 import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/Common/AnimatedLink';
@@ -24,7 +24,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={nexab_logo} alt="nexab_logo" priority width={120} height={40} style={{ objectFit: 'contain' }} />
+          <Image src={nexab_logo} alt="nexab_logo" priority width={240} height={80} style={{ objectFit: 'contain' }} />
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}
@@ -36,7 +36,7 @@ const Header = () => {
         </LogoContainer>
         <Nav className={isOpen ? 'active' : ''}>
           {links.map((link, i) => (
-            <AnimatedLink key={i} title={link.linkTo} />
+            <AnimatedLink key={i} title={link.linkTo} href={link.url} />
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>

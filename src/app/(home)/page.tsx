@@ -1,8 +1,8 @@
 import {
   FAQ,
   Featured,
+  FinancialFreedom,
   FinancialFuture,
-  FinancilaFreedom,
   HeroSection,
   IntroSection,
   JoinSection,
@@ -16,7 +16,7 @@ export default function Home() {
       <HeroSection />
       <Featured />
       <OffersSection />
-      <FinancilaFreedom />
+      <FinancialFreedom />
       <FinancialFuture />
       <IntroSection />
       <JoinSection />

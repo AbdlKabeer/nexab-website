@@ -26,11 +26,11 @@ export const links = [
     linkTo: 'Properties',
   },
   {
-    url: '/',
+    url: '/services',
     linkTo: 'Services',
   },
   {
-    url: '/',
+    url: '/about-us',
     linkTo: 'About Us',
   },
 ];

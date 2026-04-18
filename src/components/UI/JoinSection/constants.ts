@@ -12,34 +12,34 @@ export type Props = {
 export const testimonials = [
   {
     testimony:
-      "Nexab has transformed my approach to property hunting. Their virtual tours have helped me save time, and their user-friendly platform makes managing my viewings a breeze. I've never felt more confident about my next home.",
-    person: 'Robert Fox',
+      "Nexab has transformed how I find my homes. Booking an inspection was instant, and the agent was already at the property when I arrived! It's never been this সহজ.",
+    person: 'Robert Fox (Renter)',
     avatar: robert_fox,
   },
   {
     testimony:
-      "I can't express how grateful I am to Nexab. Their property management services have been a game-changer for my real estate portfolio. The expert guidance and personalized strategies have given us peace of mind.",
-    person: 'Cameron Williamson',
+      "As a landlord, I've never reached verified renters so quickly. The Nexab platform gives me peace of mind knowing all documents and inspections are professionally handled.",
+    person: 'Cameron Williamson (Landlord)',
     avatar: cameron_williamson,
   },
   {
     testimony:
-      "Nexab's search filters have been a lifeline for me. I always struggled with finding the right place, but their team helped me find a tailored property that addressed my goals and concerns. It's been a game-changer.",
-    person: 'Esther Howard',
+      "Conducting inspections with Nexab has been a rewarding side hustle. I set my own schedule and the platform manages all my bookings and earnings seamlessly.",
+    person: 'Esther Howard (Agent)',
     avatar: esther_howard,
   },
   {
     testimony:
-      "I can't express how grateful I am to Nexab. Their property management services have been a game-changer for my family's security. The expert guidance and personalized strategies have given us peace of mind.",
-    person: 'Cameron Williamson',
+      "The transparency Nexab brings to the real estate market is unmatched. Whether you're listing, renting, or inspecting, you know exactly where you stand.",
+    person: 'Cameron Williamson (Property Manager)',
     avatar: cameron_williamson,
   },
   {
     testimony:
-      "Nexab has transformed my approach to real estate. Their smart listing options have helped me grow my portfolio, and their user-friendly platform makes managing my property a breeze.",
-    person: 'Robert Fox',
+      "I used to spend days calling agents. Now, I just browse, book, and move in. Nexab is the only property ecosystem you'll ever need.",
+    person: 'Robert Fox (Happy Renter)',
     avatar: robert_fox,
   },
 ];
 
-export const desktopHeaderPhrase = ['Join over 3,000', 'homeowners'];
+export const desktopHeaderPhrase = ['Join over 10,000', 'Nexab Users'];

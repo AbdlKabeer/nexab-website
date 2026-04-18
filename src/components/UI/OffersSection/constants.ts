@@ -22,27 +22,27 @@ export const mobileParagraphPhrase = [
 
 export const offers = [
   {
-    illustration: luxury_penthouse,
-    title: 'Property Sales',
-    details:
-      'Explore our curated selection of luxury homes and commercial properties for sale.',
-  },
-  {
     illustration: modern_apartment,
-    title: 'Rentals & Leasing',
+    title: 'For Renters',
     details:
-      'Discover high-end apartments and modern living spaces available for rent in prime locations.',
+      'Browse verified listings, book instant inspections, and connect directly with trusted agents.',
   },
   {
     illustration: loftstyle_bedroom,
-    title: 'Property Management',
+    title: 'For Landlords',
     details:
-      'Professional management services to ensure your property is well-maintained and profitable.',
+      'List your properties for rent or sale and reach thousands of verified renters through our secure platform.',
+  },
+  {
+    illustration: luxury_penthouse,
+    title: 'For Agents',
+    details:
+      'Join our network, conduct professional property inspections, and earn money on your own schedule.',
   },
   {
     illustration: couples_hotel,
-    title: 'Investment Advice',
+    title: 'One Ecosystem',
     details:
-      'Expert guidance on real estate investment opportunities to grow your wealth steadily.',
+      'We bring everyone together to make real estate transactions faster, safer, and more transparent for all.',
   },
 ];
