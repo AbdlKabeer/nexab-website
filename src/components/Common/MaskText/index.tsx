@@ -10,11 +10,11 @@ const MaskText = ({ phrases, tag }: { phrases: string[]; tag: string }) => {
     },
     open: (i: number) => ({
       y: '0%',
-      transition: { duration: 1, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
+      transition: { duration: 0.7, delay: 0.05 * i, ease: [0.33, 1, 0.68, 1] },
     }),
   };
   const body = useRef(null);
-  const isInView = useInView(body, { once: true, margin: '-10%', amount: 0.4 });
+  const isInView = useInView(body, { once: true, margin: '-10%', amount: 0.2 });
   return (
     <Body ref={body}>
       {phrases.map((phrase, index) => {

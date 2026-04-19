@@ -49,9 +49,13 @@ export const Header = styled.header`
 `;
 
 export const ImageCtn = styled.div`
-  margin: 3rem auto 0;
+  margin: 1.5rem auto 0;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
 
   &::after {
     position: absolute;
@@ -60,7 +64,7 @@ export const ImageCtn = styled.div`
     width: 100%;
     background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, #131313 100%);
     left: 0;
-    top: 50px;
+    bottom: 0;
   }
 
   img {
@@ -89,8 +93,9 @@ export const TextCtn = styled.div`
   max-width: 32.25rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
   margin-top: auto;
+  z-index: 2;
 
   h2 {
     font-size: 2rem;
@@ -130,7 +135,6 @@ export const Offers = styled.div`
       }
 
       ${TextCtn} {
-        height: 1em;
         flex: 1;
       }
     }
@@ -145,7 +149,6 @@ export const Offers = styled.div`
       }
 
       ${TextCtn} {
-        height: 1em;
         flex: 1;
       }
     }
@@ -202,7 +205,7 @@ export const OfferCard = styled.div`
     flex: 1;
 
     ${ImageCtn} {
-      margin-left: 2.5rem;
+      margin-left: 0;
       width: 100%;
     }
   }

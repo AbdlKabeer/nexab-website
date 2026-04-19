@@ -13,8 +13,7 @@ const linksArr = [
     title: 'About us',
     links: [
       { label: 'Our Company', path: '/about-us' },
-      { label: 'Careers', path: '#' },
-      { label: 'Press kits', path: '#' },
+      // { label: 'Careers', path: '#' },
     ],
   },
   {
@@ -89,10 +88,6 @@ const Footer = () => {
             </FooterNavigation>
           </FooterMiddle>
           <FooterBottom>
-            <Translator>
-              <h3>English (United Kingdom)</h3>
-              <Image src={ic_chevron_down} alt="chevron down" />
-            </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
               Nexab Corp, LLC.
