@@ -13,7 +13,7 @@ import {
   MissionVision,
   FullWidthCTA,
 } from './styles';
-import { GetStartedButton, WaitlistModal } from '@/components';
+import { GetStartedButton } from '@/components';
 import { motion } from 'framer-motion';
 import penthouse_img from '../../../public/images/landing-page/luxury-penthouse.png';
 import lifestyle_img from '../../../public/images/landing-page/person-reaching-to-hang-a-frame-on-the-wall.jpg';
@@ -190,7 +190,7 @@ const AboutUsPage = () => {
           </motion.div>
         </FullWidthCTA>
       </Inner>
-      <WaitlistModal />
+
     </Wrapper>
   );
 };

@@ -12,7 +12,7 @@ import {
   FeatureItem,
   CTASection,
 } from './styles';
-import { MaskText, GetStartedButton, WaitlistModal } from '@/components';
+import { MaskText, GetStartedButton } from '@/components';
 import { motion } from 'framer-motion';
 
 const ServicesPage = () => {
@@ -114,7 +114,7 @@ const ServicesPage = () => {
           <GetStartedButton padding="1.25rem 3rem" />
         </CTASection>
       </Inner>
-      <WaitlistModal />
+
     </Wrapper>
   );
 };

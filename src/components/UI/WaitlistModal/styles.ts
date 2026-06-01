@@ -1,154 +1,152 @@
 'use client';
 import { styled } from 'styled-components';
-import { motion } from 'framer-motion';
 
-export const Overlay = styled(motion.div)`
+export const Overlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(7, 6, 6, 0.85);
-  backdrop-filter: blur(10px);
-  z-index: 9999;
+  right: 0;
+  bottom: 0;
+  background: rgba(7, 6, 6, 0.7);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  z-index: 1000;
 `;
 
-export const ModalContainer = styled(motion.div)`
-  width: 100%;
-  max-width: 32rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2rem;
-  padding: 3rem 2rem;
+export const ModalContainer = styled.div`
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 450px;
   position: relative;
-  overflow: hidden;
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-      circle at center,
-      rgba(249, 115, 22, 0.05) 0%,
-      transparent 70%
-    );
-    pointer-events: none;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 `;
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--white);
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  color: var(--link-color);
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 10;
+  transition: color 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(90deg);
-  }
-`;
-
-export const Content = styled.div`
-  text-align: center;
-  position: relative;
-  z-index: 1;
-
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
     color: var(--white);
-    line-height: 1.2;
-  }
-
-  p {
-    color: var(--link-color);
-    font-size: 1.125rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.75rem;
-    }
-    p {
-      font-size: 1rem;
-    }
   }
 `;
 
-export const SuccessOverlay = styled(motion.div)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--Background);
+export const Title = styled.h2`
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+`;
+
+export const Subtitle = styled.p`
+  font-size: 0.95rem;
+  color: var(--link-color);
+  line-height: 1.5;
+`;
+
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  padding: 2rem;
-  text-align: center;
+  gap: 1.25rem;
+`;
 
-  svg {
-    width: 4rem;
-    height: 4rem;
-    color: var(--brand-secondary);
-    margin-bottom: 1.5rem;
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+export const Label = styled.label`
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--light-gray);
+`;
+
+export const Input = styled.input`
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--brand-primary);
   }
 
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    color: var(--link-color);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.3);
   }
 `;
 
-export const DoneButton = styled.button`
-  margin-top: 2rem;
-  padding: 0.875rem 3rem;
-  border-radius: 6.25rem;
-  border: none;
+export const Select = styled.select`
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1rem;
+  appearance: none;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+  }
+  
+  option {
+    background: #111;
+    color: var(--white);
+  }
+`;
+
+export const SubmitButton = styled.button`
   background: var(--brand-primary);
   color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
-  font-family: inherit;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  margin-top: 0.5rem;
 
   &:hover {
-    background: var(--brand-secondary);
-    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
-    transform: translateY(-2px);
+    opacity: 0.9;
   }
-
+  
   &:active {
-    transform: translateY(0);
+    transform: scale(0.98);
   }
+`;
+
+export const SuccessMessage = styled.div`
+  background: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+  border: 1px solid rgba(34, 197, 94, 0.2);
 `;

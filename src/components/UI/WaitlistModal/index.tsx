@@ -1,128 +1,113 @@
 'use client';
-import { useEffect, useState, useRef } from 'react';
-import { AnimatePresence } from 'framer-motion';
+
+import { useState, useEffect } from 'react';
 import {
   Overlay,
   ModalContainer,
   CloseButton,
-  Content,
-  SuccessOverlay,
-  DoneButton,
+  Title,
+  Subtitle,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Select,
+  SubmitButton,
+  SuccessMessage,
 } from './styles';
-import WaitlistForm from '../../Common/WaitlistForm';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const WaitlistModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const hasShownRef = useRef(false);
+  const [email, setEmail] = useState('');
+  const [role, setRole] = useState('Tenant');
+  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    // 1. Scroll trigger logic
-    const handleScroll = () => {
-      if (typeof window === 'undefined') return;
-      
-      const scrollHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.scrollY;
-      const clientHeight = window.innerHeight;
-      
-      // Calculate scroll percentage
-      const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
-
-      // Trigger at 30% scroll
-      if (scrollPercent > 30 && !hasShownRef.current) {
-        setIsOpen(true);
-        hasShownRef.current = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // 2. Event listener for manual trigger
-    const handleManualOpen = () => {
+    const handleOpen = () => {
       setIsOpen(true);
+      setSubmitted(false);
+      setEmail('');
     };
 
-    window.addEventListener('open-waitlist', handleManualOpen);
+    window.addEventListener('open-waitlist', handleOpen as EventListener);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('open-waitlist', handleManualOpen);
+      window.removeEventListener('open-waitlist', handleOpen as EventListener);
     };
   }, []);
 
-  const closePortal = () => {
+  const handleClose = () => {
     setIsOpen(false);
-    // Reset success state after closing animation
-    setTimeout(() => setIsSuccess(false), 300);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Waitlist Join Request:', { email, role });
+    setSubmitted(true);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 2500);
   };
 
   return (
     <AnimatePresence>
       {isOpen && (
         <Overlay
+          as={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          onClick={closePortal}
+          onClick={handleClose}
         >
           <ModalContainer
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+            as={motion.div}
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 20, opacity: 0 }}
+            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <CloseButton onClick={closePortal}>
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 1L1 13M1 1L13 13"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </CloseButton>
+            <CloseButton onClick={handleClose}>&times;</CloseButton>
+            
+            <div>
+              <Title>Join the Waitlist</Title>
+              <Subtitle>Be the first to know when Nexab goes live. Register your interest below.</Subtitle>
+            </div>
 
-            <Content>
-              <h2>Join the Waitlist</h2>
-              <p>
-                Be among the first to experience the future of modern real estate.
-                Sign up now for early access and exclusive updates.
-              </p>
-              <WaitlistForm onSuccess={() => setIsSuccess(true)} />
-            </Content>
+            {submitted ? (
+              <SuccessMessage>
+                Thanks for joining! We'll be in touch soon.
+              </SuccessMessage>
+            ) : (
+              <Form onSubmit={handleSubmit}>
+                <FormGroup>
+                  <Label htmlFor="email">Email Address</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </FormGroup>
 
-            {isSuccess && (
-              <SuccessOverlay
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-                <h3>You&apos;re In!</h3>
-                <p>We&apos;ll notify you as soon as we launch.</p>
-                <DoneButton onClick={closePortal}>
-                  Done
-                </DoneButton>
-              </SuccessOverlay>
+                <FormGroup>
+                  <Label htmlFor="role">I am a...</Label>
+                  <Select
+                    id="role"
+                    value={role}
+                    onChange={(e) => setRole(e.target.value)}
+                  >
+                    <option value="Tenant">Tenant</option>
+                    <option value="Landlord">Landlord</option>
+                    <option value="Agent">Real Estate Agent</option>
+                  </Select>
+                </FormGroup>
+
+                <SubmitButton type="submit">Join Waitlist</SubmitButton>
+              </Form>
             )}
           </ModalContainer>
         </Overlay>
