@@ -1,13 +1,13 @@
 // For desktop
-export const phrases = ['The Ecosystem for', 'Smart Real Estate.'];
+export const phrases = ['Elevate Your', 'Living Standard.'];
 export const paragraphPhrases = [
-  'Nexab connects renters, landlords, and agents in one seamless',
-  'platform. Find, list, or inspect properties with ease.',
+  'Discover premium properties, connect with elite agents,',
+  'and manage your portfolio all in one seamless ecosystem.',
 ];
 
 // For mobile
-export const mobilePhrases = ['The Ecosystem for', 'Smart Real Estate'];
+export const mobilePhrases = ['Elevate Your', 'Living Standard.'];
 export const mobileParagraphPhrases = [
-  'The ease of house hunting without the stress, delays, or uncertainty.',
-  'All you need is all in Nexab and your next abode.',
+  'Discover premium properties, connect with elite agents,',
+  'and manage your portfolio in one seamless ecosystem.',
 ];

@@ -1,10 +1,8 @@
 'use client';
 import Image from 'next/image';
-import luxury_penthouse from '../../../../public/images/landing-page/luxury-penthouse.png';
+import elite_prop from '../../../../public/images/landing-page/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg';
 import modern_apartment from '../../../../public/images/landing-page/modern-apartment.png';
-import ParallaxText from '@/components/Common/ParallaxImages';
-import companies_image from '../../../../public/images/companies.png';
-import { Wrapper, Inner, ImageContainer, ParallaxImages, Div } from './styles';
+import { Wrapper, Inner, ImageContainer, Div } from './styles';
 import RevealCover from '@/components/Common/RevealCover';
 import { useIsMobile } from '../../../../libs/useIsMobile';
 export const imageVariants = {
@@ -43,8 +41,8 @@ const Featured = () => {
               />
             ) : (
               <Image
-                src={luxury_penthouse}
-                alt="Luxury Nexab penthouse exterior view"
+                src={elite_prop}
+                alt="Luxury Nexab exterior view"
                 fill
                 style={{ objectFit: 'cover' }}
               />

@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Edge, Edges, Title } from '../FinancialFreedom/styles';
-import interior from '../../../../public/images/brand/interior.png';
-import exterior from '../../../../public/images/brand/exterior.png';
-import smart_home from '../../../../public/images/brand/smart_home.png';
+import img_modern from '../../../../public/images/landing-page/modern-apartment.png';
+import img_frame from '../../../../public/images/landing-page/person-reaching-to-hang-a-frame-on-the-wall.jpg';
+import img_pool from '../../../../public/images/landing-page/rain-falls-on-clean-pool-and-deck.jpg';
 import {
   Wrapper,
   Inner,
@@ -51,25 +51,28 @@ const IntroSection = () => {
         <CardsContainer>
           <LeftImage
             className={isHovered ? 'active' : ''}
-            src={exterior}
-            alt="Modern Nexab property exterior"
+            src={img_frame}
+            alt="Modern Nexab property"
             width={400}
             height={250}
+            style={{ objectFit: 'cover' }}
           />
           <MiddleImage
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            src={interior}
+            src={img_modern}
             alt="Luxury Nexab interior"
             width={500}
             height={320}
+            style={{ objectFit: 'cover' }}
           />
           <RightImage
             className={isHovered ? 'active' : ''}
-            src={smart_home}
+            src={img_pool}
             alt="Nexab smart home technology"
             width={400}
             height={250}
+            style={{ objectFit: 'cover' }}
           />
         </CardsContainer>
         <Edges>

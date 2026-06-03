@@ -1,9 +1,13 @@
 'use client';
 import { styled } from 'styled-components';
 
+import bg_image from '../../../../public/images/landing-page/steven-ungermann-ydudT6TqqmI-unsplash.jpg';
+
 export const Wrapper = styled.section`
   margin-top: 8.56rem;
-  background: var(--brand-primary);
+  background: linear-gradient(180deg, rgba(234, 88, 12, 0.8) 0%, rgba(234, 88, 12, 0.95) 100%), url(${bg_image.src}) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 `;
 
 export const Inner = styled.div`
@@ -22,7 +26,7 @@ export const Header = styled.header`
   max-width: 48.5rem;
   margin: 0 auto 6.5rem;
   h1 {
-    color: var(--Background, #070606);
+    color: var(--white);
     font-size: 4.75rem;
     font-weight: 400;
   }

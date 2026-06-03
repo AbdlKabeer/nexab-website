@@ -4,10 +4,12 @@ const styled = { createGlobalStyle };
 
 export const GlobalStyles = styled.createGlobalStyle`
   :root {
-    --Background: #070606;
-    --white: #fff;
-    --light-gray: #dcdcdc;
-    --link-color: #bdbdbd;
+    --Background: #050505;
+    --surface: rgba(255, 255, 255, 0.04);
+    --surface-border: rgba(255, 255, 255, 0.08);
+    --white: #ffffff;
+    --light-gray: #e2e8f0;
+    --link-color: #94a3b8;
     --brand-primary: #ea580c;
     --brand-secondary: #f97316;
   }

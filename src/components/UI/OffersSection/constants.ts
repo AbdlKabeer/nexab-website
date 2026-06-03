@@ -5,19 +5,19 @@ import couples_hotel from '../../../../public/images/landing-page/couples-hotel-
 
 // For desktop
 export const desktopHeaderPhrases = [
-  'Comprehensive Real Estate',
-  'Solutions with Nexab',
+  'Exclusive Real Estate',
+  'Opportunities Await',
 ];
 export const desktopParagraphPhrase = [
-  'Nexab offers a world of property possibilities. From luxury sales to professional',
-  "management, we've got you covered. Find your next home with us today.",
+  'Experience a world of curated property possibilities. From luxury sales to elite',
+  "management, we elevate your real estate journey.",
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'Nexab offers a world of property possibilities. From',
-  "luxury sales to management, we've got you covered.",
-  'Find your next home with us today.',
+  'Experience curated property possibilities.',
+  "From luxury sales to elite management,",
+  'we elevate your real estate journey.',
 ];
 
 export const offers = [

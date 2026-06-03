@@ -1,21 +1,23 @@
 'use client';
 import { styled } from 'styled-components';
-import hero_background from '../../../../public/images/grid_background.png';
+import hero_background from '../../../../public/images/landing-page/elite-prop-hmlP-v0vJ5o-unsplash.jpg';
 
 export const Wrapper = styled.section`
-  margin-top: 6.25rem;
+  margin-top: 0;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0.4) 0%, rgba(5, 5, 5, 0.9) 100%), url(${hero_background.src}) no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid var(--surface-border);
 `;
 
 export const Inner = styled.div`
-  background: url(${hero_background.src}) no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 56rem;
+  max-width: 60rem;
   margin: 0 auto;
   text-align: center;
-  background-position: top center;
-  background-size: contain;
 `;
 
 export const Pill = styled.div`

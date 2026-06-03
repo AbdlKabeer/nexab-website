@@ -3,20 +3,19 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing Nexab's Smart", 'Property App'];
+export const desktopHeaderPhrase = ["The Ultimate Real Estate", 'Ecosystem'];
 export const desktopParagraphPhrase = [
-  " Discover Nexab's latest innovation – our property management app. Elevate your",
-  'real estate experience with cutting-edge features, virtual tours, and unprecedented',
-  'convenience.',
+  "Discover Nexab's premium platform. Elevate your real estate",
+  'experience with curated listings, seamless management,',
+  'and unprecedented convenience.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing Nexab's", 'Property App'];
+export const mobileHeaderPhrase = ["The Ultimate", 'Ecosystem'];
 export const mobileParagraphPhrase = [
-  " Discover Nexab's latest innovation – our property app.",
-  ' Elevate your real estate experience with cutting-edge',
-  'features, virtual tours, and unprecedented',
-  'convenience.',
+  "Discover Nexab's premium platform.",
+  'Elevate your real estate experience with',
+  'curated listings and management.',
 ];
 
 export const edges = [
