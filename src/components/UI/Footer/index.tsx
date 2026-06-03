@@ -56,7 +56,7 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={nexab_footer_logo} alt="nexab_footer_logo" width={120} height={40} style={{ objectFit: 'contain' }} />
+          <Image src={nexab_footer_logo} alt="nexab_footer_logo" width={120} height={40} style={{ objectFit: 'contain', transform: 'scale(3.5)' }} />
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>

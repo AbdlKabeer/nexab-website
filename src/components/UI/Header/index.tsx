@@ -24,7 +24,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={nexab_logo} alt="nexab_logo" priority width={240} height={80} style={{ objectFit: 'contain' }} />
+          <Image src={nexab_logo} alt="nexab_logo" priority width={240} height={80} style={{ objectFit: 'contain', transform: 'scale(3.5)' }} />
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}
