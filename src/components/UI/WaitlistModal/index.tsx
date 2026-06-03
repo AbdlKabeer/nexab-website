@@ -77,7 +77,7 @@ const WaitlistModal = () => {
 
             {submitted ? (
               <SuccessMessage>
-                Thanks for joining! We'll be in touch soon.
+                  Thanks for joining! We&apos;ll be in touch soon.
               </SuccessMessage>
             ) : (
               <Form onSubmit={handleSubmit}>

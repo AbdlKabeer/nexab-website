@@ -58,7 +58,7 @@ const JoinSection = () => {
                   <MaskText phrases={new Array('Happy Nexab User')} tag="p" />
                 </Name>
                 <Avatar>
-                  <Image src={t.avatar} alt="user avatar" />
+                  {t.avatar && <Image src={t.avatar} alt="user avatar" />}
                 </Avatar>
               </UserInfo>
             </Testimonial>
